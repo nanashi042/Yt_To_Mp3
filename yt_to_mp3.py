@@ -9,7 +9,7 @@ def downloader(url):
     video = yt.streams.filter(only_audio=True).first()
 
     # check for destination to save file
-    destination = "/temp/static/audio"  # You don't need to add a space at the end
+    destination = "./static/audio"  # You don't need to add a space at the end
 
     # download the file
     out_file = video.download(output_path=destination)
