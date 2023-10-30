@@ -1,0 +1,28 @@
+body {
+    position: relative; /* Establish a positioning context for pseudo-element */
+}
+
+/* Create a pseudo-element to overlay the background image */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.wallpapersafari.com/46/30/S7zpL2.png");
+    background-size: cover;
+    z-index: -1;
+}
+
+.input {
+    display: inline-block;
+    width: 70vw;
+    margin-top: 25vh;
+    margin-left: 25vh;
+}
+
+#btn {
+    margin-left: 40vw;
+    margin-top: 5vh;
+}

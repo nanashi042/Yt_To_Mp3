@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/download.css')}}">
+    <title>Download</title>
+</head>
+<body>
+ 
+    <audio controls id="audio">
+        <source src="{{url_for('static',filename='audio/music.mp3')}}" type="audio/mp3">
+        <!-- <source src="horse.mp3" type="audio/mpeg"> -->
+      </audio>
+
+        <a href="{{url_for('static',filename='audio/music.mp3')}}" Download="music.mp3" class="ui primary button" id="btn"> Download</a>
+
+      <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+</body>
+</html>
